@@ -1,0 +1,2 @@
+// we can add here handle for contract deployment based on the name of contract, and it will return an instance of an
+// exact class for an exact type of contract we need. sort of Contract Fabric to handle local contract deployment

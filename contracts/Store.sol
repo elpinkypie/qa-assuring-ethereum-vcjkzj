@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 pragma abicoder v2;
 import "./StoreBase.sol";
 
-contract Store is StoreBase{
+abstract contract Store is StoreBase{
     function addProduct(string memory name, uint16 quantity) public onlyOwner quantityCheck(quantity) nameCheck(name){
         bool productExist = bytes(productNameMap[name].name).length>0;
         uint productId = productsIds[generateId(name)];

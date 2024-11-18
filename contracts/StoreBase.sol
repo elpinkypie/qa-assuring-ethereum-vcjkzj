@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "./Validation.sol";
 import "./ProductCheck.sol";
 
-contract StoreBase is Ownable, ProductCheck, Validation{
+abstract contract StoreBase is Ownable, ProductCheck, Validation{
 
     struct Product{
         string name;
